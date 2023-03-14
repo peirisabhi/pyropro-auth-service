@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     public String m(){
+        System.out.println("test");
         return null;
 
     }
