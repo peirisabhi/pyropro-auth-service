@@ -73,7 +73,7 @@
 // }
 
 pipeline{
-    agen any
+    agent any
 
     stages{
         stage('sonar quality status'){
