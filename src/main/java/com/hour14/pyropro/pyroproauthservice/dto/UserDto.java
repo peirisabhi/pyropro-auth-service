@@ -18,7 +18,6 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
-@AllArgsConstructor
 public class UserDto implements Transformer {
 
     private int id;
