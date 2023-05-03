@@ -24,6 +24,10 @@ public class UserRoleServiceImpl implements UserRoleService {
     @Autowired
     UserRoleRepository userRoleRepository;
 
+    public UserRoleServiceImpl(UserRoleRepository userRoleRepository) {
+        this.userRoleRepository = userRoleRepository;
+    }
+
     @Override
     public List<UserRoleDto> getUserRoles() {
         try {

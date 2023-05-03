@@ -2,6 +2,7 @@ package com.hour14.pyropro.pyroproauthservice.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.hour14.pyropro.pyroproauthservice.util.Transformer;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -17,6 +18,7 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
 public class UserDto implements Transformer {
 
     private int id;
