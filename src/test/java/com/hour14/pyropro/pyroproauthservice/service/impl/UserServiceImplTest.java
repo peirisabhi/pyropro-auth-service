@@ -1,9 +1,7 @@
 package com.hour14.pyropro.pyroproauthservice.service.impl;
 
 import com.hour14.pyropro.pyroproauthservice.dto.UserDto;
-import com.hour14.pyropro.pyroproauthservice.dto.UserRoleDto;
 import com.hour14.pyropro.pyroproauthservice.model.User;
-import com.hour14.pyropro.pyroproauthservice.model.UserRole;
 import com.hour14.pyropro.pyroproauthservice.repository.UserRepository;
 import com.hour14.pyropro.pyroproauthservice.service.UserService;
 import org.junit.Assert;
@@ -14,10 +12,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 /**
  * Created by Intellij.

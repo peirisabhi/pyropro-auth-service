@@ -1,7 +1,6 @@
 package com.hour14.pyropro.pyroproauthservice.service.impl;
 
 import com.hour14.pyropro.pyroproauthservice.dto.UserRoleDto;
-import com.hour14.pyropro.pyroproauthservice.exception.GeneralException;
 import com.hour14.pyropro.pyroproauthservice.model.UserRole;
 import com.hour14.pyropro.pyroproauthservice.repository.UserRoleRepository;
 import com.hour14.pyropro.pyroproauthservice.service.UserRoleService;
