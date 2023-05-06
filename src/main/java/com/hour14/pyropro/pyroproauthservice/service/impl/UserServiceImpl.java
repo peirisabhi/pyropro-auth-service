@@ -13,6 +13,7 @@ import com.hour14.pyropro.pyroproauthservice.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -46,6 +47,7 @@ public class UserServiceImpl implements UserService {
             final User user = userDto.toEntity(User.class);
             user.setRegisteredAt(new Date());
             user.setStatus(1);
+            user.setPassword(new BCryptPasswordEncoder().encode(userDto.getPassword()));
 
             return userRepository.save(user)
                     .toDto(UserDto.class);

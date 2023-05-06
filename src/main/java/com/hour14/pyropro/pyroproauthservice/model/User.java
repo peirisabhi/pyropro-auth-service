@@ -42,5 +42,7 @@ public class User implements Transformer {
     @Column(name = "user_role_id")
     private int userRoleId;
 
+    private String password;
+
 
 }

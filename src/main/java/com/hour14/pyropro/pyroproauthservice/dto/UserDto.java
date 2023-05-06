@@ -40,5 +40,5 @@ public class UserDto implements Transformer {
 
     private String userRole;
 
-
+    private String password;
 }
